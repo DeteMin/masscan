@@ -10,8 +10,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/zan8in/masscan/errors"
-	"github.com/zan8in/masscan/tools"
+	"github.com/DeteMin/masscan/errors"
+	"github.com/DeteMin/masscan/tools"
 )
 
 type (
@@ -25,7 +25,7 @@ type (
 
 		pid int // os.getpid()
 
-		debug bool `default:false`
+		debug bool `default:"false"`
 
 		stderr, stdout bufio.Scanner
 	}

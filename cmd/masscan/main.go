@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/zan8in/gologger"
-	"github.com/zan8in/masscan/pkg/runner"
+	"github.com/DeteMin/masscan/pkg/runner"
 )
 
 func main() {

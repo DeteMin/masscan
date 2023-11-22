@@ -8,7 +8,6 @@ type (
 	//]
 	MasscanResult struct {
 		Hosts []Hosts `json:"hosts"`
-		Ports []Ports `json:"ports"`
 	}
 
 	// Hosts  masscan hosts output struct

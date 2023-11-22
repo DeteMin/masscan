@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/zan8in/masscan"
+	"github.com/DeteMin/masscan"
 )
 
 // BESTPORTS "21,22,80,U:137,U:161,443,445,U:1900,3306,3389,U:5353,8080"
@@ -35,8 +35,8 @@ func main() {
 	}
 
 	if scanResult != nil {
-		for i, v := range scanResult.Hosts {
-			fmt.Printf("Host: %s Port: %v\n", v.IP, scanResult.Ports[i].Port)
+		for _, v := range scanResult.Hosts {
+			fmt.Printf("Host: %s Port: %v\n", v.IP, v.Ports)
 		}
 		fmt.Println("hosts len : ", len(scanResult.Hosts))
 	}
